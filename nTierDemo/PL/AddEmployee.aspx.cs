@@ -14,7 +14,7 @@ using BLL;
 
 public partial class AddEmployee : System.Web.UI.Page
 {
-    //comment this is in git first time
+    // thsi is commited on 03/07/2015
     protected void Page_Load(object sender, EventArgs e)
     {
 
