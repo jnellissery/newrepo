@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="BindCountrydropdown">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="knownCategoryValues" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="category" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BindCountrydropdownResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BindCountrydropdownResult" type="tns:ArrayOfCascadingDropDownNameValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCascadingDropDownNameValue">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CascadingDropDownNameValue" nillable="true" type="tns:CascadingDropDownNameValue" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CascadingDropDownNameValue">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="isDefaultValue" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="optionTitle" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AuthSoapHd1" type="tns:AuthSoapHd1" />
+      <s:complexType name="AuthSoapHd1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strPassword" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="BindStatedropdown">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="knownCategoryValues" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="category" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BindStatedropdownResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BindStatedropdownResult" type="tns:ArrayOfCascadingDropDownNameValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BindRegiondropdown">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="knownCategoryValues" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="category" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BindRegiondropdownResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BindRegiondropdownResult" type="tns:ArrayOfCascadingDropDownNameValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BindCountrydropdownSoapIn">
+    <wsdl:part name="parameters" element="tns:BindCountrydropdown" />
+  </wsdl:message>
+  <wsdl:message name="BindCountrydropdownSoapOut">
+    <wsdl:part name="parameters" element="tns:BindCountrydropdownResponse" />
+  </wsdl:message>
+  <wsdl:message name="BindCountrydropdownAuthSoapHd1">
+    <wsdl:part name="AuthSoapHd1" element="tns:AuthSoapHd1" />
+  </wsdl:message>
+  <wsdl:message name="BindStatedropdownSoapIn">
+    <wsdl:part name="parameters" element="tns:BindStatedropdown" />
+  </wsdl:message>
+  <wsdl:message name="BindStatedropdownSoapOut">
+    <wsdl:part name="parameters" element="tns:BindStatedropdownResponse" />
+  </wsdl:message>
+  <wsdl:message name="BindRegiondropdownSoapIn">
+    <wsdl:part name="parameters" element="tns:BindRegiondropdown" />
+  </wsdl:message>
+  <wsdl:message name="BindRegiondropdownSoapOut">
+    <wsdl:part name="parameters" element="tns:BindRegiondropdownResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DropdownWebServiceSoap">
+    <wsdl:operation name="BindCountrydropdown">
+      <wsdl:input message="tns:BindCountrydropdownSoapIn" />
+      <wsdl:output message="tns:BindCountrydropdownSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BindStatedropdown">
+      <wsdl:input message="tns:BindStatedropdownSoapIn" />
+      <wsdl:output message="tns:BindStatedropdownSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BindRegiondropdown">
+      <wsdl:input message="tns:BindRegiondropdownSoapIn" />
+      <wsdl:output message="tns:BindRegiondropdownSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DropdownWebServiceSoap" type="tns:DropdownWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BindCountrydropdown">
+      <soap:operation soapAction="http://tempuri.org/BindCountrydropdown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:BindCountrydropdownAuthSoapHd1" part="AuthSoapHd1" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindStatedropdown">
+      <soap:operation soapAction="http://tempuri.org/BindStatedropdown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindRegiondropdown">
+      <soap:operation soapAction="http://tempuri.org/BindRegiondropdown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DropdownWebServiceSoap12" type="tns:DropdownWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BindCountrydropdown">
+      <soap12:operation soapAction="http://tempuri.org/BindCountrydropdown" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:BindCountrydropdownAuthSoapHd1" part="AuthSoapHd1" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindStatedropdown">
+      <soap12:operation soapAction="http://tempuri.org/BindStatedropdown" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindRegiondropdown">
+      <soap12:operation soapAction="http://tempuri.org/BindRegiondropdown" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DropdownWebService">
+    <wsdl:port name="DropdownWebServiceSoap" binding="tns:DropdownWebServiceSoap">
+      <soap:address location="http://localhost:1875/PL/DropdownWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DropdownWebServiceSoap12" binding="tns:DropdownWebServiceSoap12">
+      <soap12:address location="http://localhost:1875/PL/DropdownWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

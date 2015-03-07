@@ -1,0 +1,4 @@
+D:\nTierDemo\MembershipProviderCSharp\bin\Debug\MembershipProviderCSharp.dll
+D:\nTierDemo\MembershipProviderCSharp\bin\Debug\MembershipProviderCSharp.pdb
+D:\nTierDemo\MembershipProviderCSharp\obj\Debug\MembershipProviderCSharp.dll
+D:\nTierDemo\MembershipProviderCSharp\obj\Debug\MembershipProviderCSharp.pdb

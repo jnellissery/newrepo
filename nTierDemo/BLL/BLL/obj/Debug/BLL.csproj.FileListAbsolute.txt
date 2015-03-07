@@ -1,0 +1,14 @@
+D:\R_D\nTierDemo\nTierDemo\BLL\BLL\bin\Debug\BLL.dll
+D:\R_D\nTierDemo\nTierDemo\BLL\BLL\bin\Debug\BLL.pdb
+D:\R_D\nTierDemo\nTierDemo\BLL\BLL\bin\Debug\DAL.dll
+D:\R_D\nTierDemo\nTierDemo\BLL\BLL\bin\Debug\DAL.pdb
+D:\R_D\nTierDemo\nTierDemo\BLL\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\R_D\nTierDemo\nTierDemo\BLL\BLL\obj\Debug\BLL.dll
+D:\R_D\nTierDemo\nTierDemo\BLL\BLL\obj\Debug\BLL.pdb
+D:\nTierDemo\BLL\BLL\bin\Debug\BLL.dll
+D:\nTierDemo\BLL\BLL\bin\Debug\BLL.pdb
+D:\nTierDemo\BLL\BLL\bin\Debug\DAL.dll
+D:\nTierDemo\BLL\BLL\bin\Debug\DAL.pdb
+D:\nTierDemo\BLL\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\nTierDemo\BLL\BLL\obj\Debug\BLL.dll
+D:\nTierDemo\BLL\BLL\obj\Debug\BLL.pdb

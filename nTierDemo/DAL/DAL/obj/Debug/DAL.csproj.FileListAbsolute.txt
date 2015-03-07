@@ -1,0 +1,8 @@
+D:\R_D\nTierDemo\nTierDemo\DAL\DAL\bin\Debug\DAL.dll
+D:\R_D\nTierDemo\nTierDemo\DAL\DAL\bin\Debug\DAL.pdb
+D:\R_D\nTierDemo\nTierDemo\DAL\DAL\obj\Debug\DAL.dll
+D:\R_D\nTierDemo\nTierDemo\DAL\DAL\obj\Debug\DAL.pdb
+D:\nTierDemo\DAL\DAL\bin\Debug\DAL.dll
+D:\nTierDemo\DAL\DAL\bin\Debug\DAL.pdb
+D:\nTierDemo\DAL\DAL\obj\Debug\DAL.dll
+D:\nTierDemo\DAL\DAL\obj\Debug\DAL.pdb

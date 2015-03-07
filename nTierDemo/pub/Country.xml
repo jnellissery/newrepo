@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<countrys>
+  <country CountryName="India" CountryID="1">
+    <state  StateID="1" StateName="Maharashtra"></state>
+    <state StateID="2" StateName="Kashmir"></state>
+    <state StateID="3" StateName ="Goa"></state>
+  </country>
+  <country CountryName="Sri Lanka"  CountryID="2">
+    <state StateID="1" StateName="Kanady"></state>
+    <state StateID="2"  StateName="Colombo"></state>
+    <state StateID="3" StateName="Galle"></state>
+  </country>
+  <country CountryName="Australia"  CountryID="3">
+    <state StateID="1"  StateName="Sydney"></state>
+    <state StateID="2"  StateName="Perth"></state>
+    <state StateID="3" StateName="Melbourne"></state>
+  </country>
+  <country CountryName="South Africa"  CountryID="4">
+    <state StateID="1" StateName="Capetown"></state>
+    <state StateID="2" StateName="Johanusburg"></state>
+    <state StateID="3" StateName="Durban"></state>
+  </country>
+</countrys>

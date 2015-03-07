@@ -1,0 +1,5 @@
+bin\Debug\MembershipProviderCSharp.dll
+bin\Debug\MembershipProviderCSharp.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MembershipProviderCSharp.dll
+obj\Debug\MembershipProviderCSharp.pdb
